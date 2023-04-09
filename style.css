@@ -1,0 +1,184 @@
+#header{
+	margin-top: 15%;
+}
+
+body{
+	background-color: #f2f2f2;
+}
+
+h1{
+    color:  darkred;
+    text-align: center;
+    margin-top: -7%;
+    width: 100%;
+    font-size: 30px;
+    
+}
+
+h2{
+	font-size: 30px;
+	color: maroon;
+	margin-top: 0;
+}
+
+#menu{
+	width: 100%;
+	position: fixed;
+	padding-left: 20%;
+	top: 0;
+	margin-top: 0;
+	position: absolute;
+	background-color:black;
+	margin-bottom: 3%;
+	text-align: center;
+}
+
+li{
+	font-weight: bold;
+	float: left;
+	padding: 1em;
+	font-size: 25px;
+	cursor: pointer;
+	
+}
+
+li, li a{
+	display: inline;
+	color: white;
+	padding: 1em;
+}
+
+#info{
+	margin-left: 3%;
+	margin-right: 3%;
+	border-style: double;
+	padding: 2%;
+	border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+}
+
+h3{
+	font-size: 20px;
+	margin-top: 0;
+}
+
+#cartolina_c45{
+	margin-top: 3%;
+	margin-left: 3%;
+	margin-right: 3%;
+	border-style: double;
+	padding: 2%;
+	border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+}
+
+#FOTOc45 .fronte #f{
+	width: 40%;
+}
+
+
+#cartolina_c128{
+	margin-top: 3%;
+	margin-left: 3%;
+	margin-right: 3%;
+	border-style: double;
+	padding: 2%;
+	border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+}
+
+#FOTOc128 .fronte #f{
+	width: 95%;
+}
+
+#FOTOc128 .retro #f{
+	width: 40%;
+	border-style: groove;
+	padding: 2%;
+	margin-left: 2%;
+	margin-top: 0;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 3%;
+}
+
+#cartolina_c144{
+	margin-top: 3%;
+	margin-left: 3%;
+	margin-right: 4%;
+	border-style: double;
+	padding: 2%;
+	border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+}
+
+#FOTOc144 .fronte #f{
+	width: 95%;
+}
+
+
+.fronte{
+	float: left; 
+	max-width: 20%;
+	text-align: center;
+	margin-top: 0;
+	padding: 1%;
+	
+}
+
+.r{
+	margin-left: 39%;
+	border-style: dotted;
+}
+
+
+footer{
+    padding: 2%;
+    border-style: groove;
+    background-color:antiquewhite;
+	text-align: center;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 3%; 
+    
+}
+
+#mappa45{
+	width: 400px;
+	
+	
+	margin-left: 2%;
+	margin-top: 0;
+    margin-left: 17%;
+    margin-right: 4%;
+    margin-bottom: 3%; 
+}
+
+#mappa128{
+	width: 400px;
+	
+	margin-left: 2%;
+	margin-top: 0;
+    margin-left: 17%;
+    margin-right: 4%;
+    margin-bottom: 3%; 
+}
+
+#mappa144{
+	width: 400px;
+	
+	margin-left: 2%;
+	margin-top: 0;
+    margin-left: 17%;
+    margin-right: 4%;
+    margin-bottom: 3%; 
+}

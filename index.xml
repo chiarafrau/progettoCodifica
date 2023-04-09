@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+<!DOCTYPE teiCorpus SYSTEM "tei.dtd">
+
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" >
+    <teiHeader>
+        <fileDesc>
+            <titleStmt> 
+            
+                <title>Progetto sulla codifica delle Cartoline</title> <!--Titolo edizione digitale-->
+                
+                <respStmt> 
+                    <resp>Progetto coordinato da</resp>
+                    <persName>
+                      <forename> Angelo </forename>
+                      <forename> Maria </forename>
+                      <surname> Del Grosso </surname>
+                    </persName>
+                </respStmt>
+                
+                <respStmt>
+                    <resp>Progetto realizzato da</resp>
+                    <name xml:id="CF"> Chiara Frau </name>
+                    <name xml:id="SC"> Simona Cattari </name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Ente di appartenenza : </resp>
+                    <name type="comune" xml:id="SP">Comune della Spezia</name>
+                </respStmt>
+                
+            </titleStmt>
+            
+            <editionStmt> 
+                <edition> Edizione digitale
+                    <date>2022</date>
+                </edition>
+                
+                <respStmt>
+                    <resp>Compilatore : </resp>
+                    <name xml:id="TC">Tommaso Castagneto</name>
+                </respStmt>
+                
+                <respStmt> 
+                    <resp>Responsabili scientifici : </resp>
+                    <name xml:id="ES">Enrica Salvatori</name>
+                    <name xml:id="GP">Giacomo Paolicchi</name>
+                </respStmt>
+
+                <respStmt>
+                    <resp>Funzionario responsabile : </resp>
+                    <name xml:id="ER">E. Ratti</name>
+                </respStmt>
+            </editionStmt>
+            
+            <publicationStmt> 
+                <publisher>Università di Pisa</publisher>
+                <pubPlace>Pisa</pubPlace>
+                <date when="2023">2023</date>
+            </publicationStmt>
+            
+            <sourceDesc> <!-- informazioni sulla fonte da cui arriva la risorsa-->
+                <msDesc>
+                    <msIdentifier> 
+                        <settlement>La Spezia (SP)</settlement>
+                        <!-- collocazione -->
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                    </msIdentifier>
+                    <!-- descrizione -->
+                    <msContents> <!--informazioni sul contenuto intellettuale-->
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+
+                    <physDesc> 
+                        <objectDesc> 
+                            <supportDesc> 
+                                <support> 
+                                    <objectType>Cartolina</objectType>
+                                    <material>Carta</material>
+                                     <dimensions unit="cm">
+                                        <height>9</height>
+                                        <width>14</width>
+                                    </dimensions>
+                                </support>
+                                <condition>Buono</condition>
+                            </supportDesc>
+                        </objectDesc>
+                    </physDesc>
+                    
+                </msDesc>
+                
+                <listPerson> 
+                    <person xml:id="OT">
+                        <name>Oliva Tortura</name>
+                        <!-- <persName>
+                            <forename>Oliva</forename>
+                            <surname>Turtura</surname>
+                        </persName> -->
+                    </person>
+
+                    <person xml:id="G">
+                        <name> Giovanni </name>
+                    </person>
+
+                    <person xml:id="HJD">
+                        <name> Henry John Dobson</name>
+                        <!-- <name> Dobson </surname> -->
+                    </person>
+
+                    <person xml:id="M">
+                        <name> Mauzano </name>
+                    </person>
+
+                    <person xml:id="FV">
+                        <name> F. Vecchi </name>
+                        <!-- <surname> Vecchi </surname> -->
+                    </person>
+                </listPerson>
+                
+                <listPlace>
+                    <place xml:id="RV">
+                        <placeName>Ravenna</placeName>
+                        <settlement type="località">città</settlement>
+                        <district type="comune">Ravenna</district>
+                        <district type="provincia">RV</district>
+                        <country>IT</country>
+                    </place>
+                    <listPlace>
+                        <place xml:id="MO">
+                            <placeName>Modena</placeName>
+                            <settlement type="località">città</settlement>
+                            <district type="comune">Modena</district>
+                            <district type="provincia">MO</district>
+                            <country>IT</country>
+                        </place>
+                    </listPlace>
+                </listPlace>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+
+
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="c45">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title xml:id="crocerossina">Crocerossina</title>       
+                </titleStmt>
+            
+                <publicationStmt> 
+                    <publisher>Universià di Pisa</publisher>    
+                </publicationStmt>
+
+                <notesStmt>
+                    <note> Sul fronte della cartolina è presente la firma dell'autore del disegno : <name ref="#FV"> F.Vecchi </name> </note>
+                </notesStmt>
+            
+                <sourceDesc>
+                    <bibl>
+                        <!-- TITOLO Quello che si ricava dalla cartolina; Se un documento composto da immagini 
+                        non presenta un titolo o altri elementi considerabili come titolo, si formula un titolo sintetico 
+                        registrandolo entro parentesi quadre [Venere al bagno] ma indicando dentro la codifica come qui sotto esemplificato-->
+                        
+                         <title> [Crocerossina] </title>
+                    </bibl>
+                        
+                    
+                    <msDesc>
+                        <msIdentifier>
+                            <country type="nation">Italia</country>
+                            <settlement type="city">La Spezia (SP)</settlement>
+                            <!-- COLLOCAZIONE SPECIFICA -->
+                            <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                            <!-- CODICE IDENTIFICATIVO -->
+                            <idno>7694_44_001/7694_44_002</idno>
+                           
+                        </msIdentifier>
+                    
+                        <msContents>
+                            <summary>Cartolina Artistica</summary>
+                            <textLang>Italiano</textLang>
+                        </msContents>
+                    
+                        <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartolina</objectType>
+                                        <!-- MATERIALI -->
+                                        <material>Carta</material>
+                                        <!-- DIMENSIONE -->
+                                        <dimensions unit="cm">
+                                            <height>9</height>
+                                            <width>14</width>
+                                        </dimensions>
+                                    </support>
+                                    <condition>Buono</condition>
+                                </supportDesc>
+                            </objectDesc>
+                        </physDesc>
+                    </msDesc>
+                </sourceDesc>
+            </fileDesc>
+        
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <placeName ref="#MO"> Modena </placeName>
+                    </correspAction>
+
+                    <correspAction type="received">
+                        <persName ref="#OT"> Oliva Turtura </persName>
+                        <placeName ref="#RV"> Ravenna </placeName>
+                    </correspAction>
+                </correspDesc>
+            
+                <langUsage>
+                    <language ident="it-IT">italiano</language>
+                </langUsage>
+
+                <handNotes>
+                    <handNote xml:id="catalogatore1" medium="pen" script="handwritten">Catalogatore</handNote>
+                </handNotes>
+            </profileDesc>
+        </teiHeader>
+
+        <facsimile>
+            <surface ulx="2" uly="1" lrx="398" lry="255" n="45">
+                <graphic url="45R.jpg"/>
+                <zone xml:id="luogo1" ulx="4" uly="84" lrx="26" lry="202" />
+                <zone xml:id="data1" ulx="11" uly="1" lrx="31" lry="75" />
+                <zone xml:id="messaggio1" ulx="37" uly="10" lrx="158" lry="217" />
+                <zone xml:id="editore1" ulx="27" uly="217" lrx="124" lry="229" />
+                <zone xml:id="firma1" ulx="165" uly="30" lrx="188" lry="134" />
+                <zone xml:id="codice1" ulx="357" uly="6" lrx="386" lry="31" />
+                <zone xml:id="serie1" ulx="185" uly="232" lrx="201" lry="237" />
+                <zone xml:id="intestatario1" ulx="200" uly="101" lrx="396" lry="228" />
+            </surface>
+        </facsimile>
+    
+        <!-- DEFINIZIONE -->
+        <text type="cartolina" xml:id="prima">
+
+        <!-- TRASCRIZIONE -->
+            <body>
+                <div type="fronte">
+                    <figure>
+                        <graphic url="45F.jpg" />
+                        <figDesc>Crocerossina</figDesc>
+                    </figure>
+                </div>
+
+                <div type="retro" n="1">
+                    <figure>
+                        <graphic url="45R.jpg" />
+                    </figure>
+
+                    <div type="message">
+                        <dateline facs="#luogo1">
+                            <placeName><gap reason="illegible" quantity="1" unit="character"/></placeName>
+                        </dateline>
+
+                        <dateline facs="#data1">
+                            <date when="1916-01-20">20/01/1916</date>
+                        </dateline>
+
+                        <p facs="#messaggio1">
+                            <lb/>Alla bella
+                            <lb/>innamorata mando 
+                            <lb/>questa <gap reason="illegible" quantity="1" unit="character"/> che in cuore
+                            <lb/><gap reason="illegible" quantity="1" unit="character"/> esprimendo , prova 
+                            <lb/><gap reason="illegible" quantity="1" unit="character"/>in durissimo
+                            <lb/>tempo.
+                        </p>
+
+                        <signed>
+                            <gap reason="illegible" quantity="1" unit="character"/>
+                        </signed>
+                    </div>
+
+                    <div type="details">
+                       <p><add hand="#catalogatore1"><idno facs="#codice1">45</idno></add></p>
+                    </div>
+
+                    <div type="destination">
+                        <p>
+                            <!-- stamps -->
+                            <stamp type="tipografia1" facs="#editore1">
+                                <mentioned>CROCE ROSSA ITALIANA</mentioned>
+                            </stamp>
+                            <stamp type="tipografia2" facs="#serie1">
+                                <mentioned>1002</mentioned>
+                            </stamp>
+                        </p>
+
+                        <p>
+                            <address facs="#intestatario1">
+                                <addrLine>
+                                    Alla Gentilissima
+                                </addrLine>
+                                <addrLine>
+                                    <choice>
+                                        <abbr> Sig.na </abbr> 
+                                        <expan> Signorina </expan>
+                                    </choice>
+                                </addrLine>
+                                <addrLine>
+                                    <persName ref="#OT"> 
+                                         <forename>Oliva</forename> 
+                                         <surname>Turtura</surname>  
+                                    </persName>
+                                </addrLine>
+                                <addrLine>Via
+                                    <persName>
+                                        <forename>Girolamo</forename>
+                                        <surname>Rossi</surname>
+                                    </persName> 
+                                    <num> 58 </num>
+                                </addrLine>
+                                <addrLine>
+                                    <placeName ref="#RV">Ravenna</placeName>
+                                </addrLine>
+                            </address>
+                        </p>
+                    </div>
+                </div>
+            </body>
+        </text>
+    </TEI>
+
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="c128">
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title xml:lang="en">Grannie Greatest Comfort</title>       
+                </titleStmt>
+            
+                <publicationStmt> 
+                    <publisher>Università di Pisa</publisher>    
+                </publicationStmt>
+
+                <notesStmt>
+                    <note>Sul fronte è presente il titolo dell'opera <title ref="#GGC">"Grannie Greatest Comfort"</title></note>
+                </notesStmt>
+
+                <sourceDesc>
+                    <bibl>
+                        <title type="custom">[Nipote serve il tè alla nonna]</title>
+                    </bibl>
+
+                    <msDesc>
+                        <msIdentifier>
+                            <country type="nation">Italia</country>
+                            <settlement type="city">La Spezia (SP)</settlement>
+                            <!-- COLLOCAZIONE SPECIFICA -->
+                            <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                            <!-- CODICE IDENTIFICATIVO -->
+                            <idno>7694_128_001/7694_128_002</idno>
+                        </msIdentifier>
+                    
+                        <msContents>
+                            <summary>Cartolina Artistica</summary>
+                            <textLang>Italiano</textLang>
+                        </msContents>
+                    
+                        <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartolina</objectType>
+                                        <material>Carta</material>
+                                        <dimensions unit="cm">
+                                            <height>9</height>
+                                            <width>14</width>
+                                        </dimensions>
+                                    </support>
+                                    <condition>Buono</condition>
+                                </supportDesc>
+                            </objectDesc>
+                        </physDesc>
+                    </msDesc>
+                </sourceDesc>
+            </fileDesc>
+        
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#G"> Giovannino </persName>
+                        <placeName> Modena </placeName>
+                        <date type="postage"> 09/06/1917 </date>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#OT"> Olivia Turtura </persName>
+                        <placeName ref="#RV"> Ravenna </placeName>
+                    </correspAction>
+                </correspDesc>
+            
+                <handNotes>
+                    <handNote xml:id="catalogatore2" medium="pen" script="handwritten">Catalogatore</handNote>
+                </handNotes>
+            </profileDesc>
+        </teiHeader>
+
+        <facsimile>
+            <surface ulx="2" uly="1" lrx="399" lry="248" n="128">
+                <graphic url="128R.jpg"/>
+                <zone xml:id="luogo2" ulx="151" uly="13" lrx="189" lry="113" />
+                <zone xml:id="data2" ulx="154" uly="116" lrx="190" lry="213" />
+                <zone xml:id="messaggio2" ulx="132" uly="75" lrx="164" lry="241" />
+                <zone xml:id="codice2" ulx="273" uly="-1" lrx="308" lry="20" />
+                <zone xml:id="p_editore2" ulx="37" uly="19" lrx="303" lry="72" />
+                <zone xml:id="s_editore2" ulx="0" uly="19" lrx="39" lry="239" />
+                <zone xml:id="firma2" ulx="55" uly="30" lrx="136" lry="225" />
+                <zone xml:id="intestatario2" ulx="191" uly="83" lrx="399" lry="239" />
+                <zone xml:id="francobollo2" ulx="329" uly="12" lrx="387" lry="76" />
+                <zone xml:id="timbro2" ulx="319" uly="6" lrx="397" lry="90" />
+            </surface>
+        </facsimile>
+
+   
+        <!--DEFINIZIONE-->
+        <text type="cartolina" xml:id="seconda">
+            <!-- TRASCRIZIONE -->
+            <body>
+                <div type="fronte">
+                    <figure>
+                        <graphic url="128F.jpg" />
+                        <figDesc> Una nipote serve il thé alla nonna 
+                            <title ref="#GGC">Grannie Greatest Comport</title>
+                        </figDesc>
+                    </figure>
+                </div>
+
+                <div type="retro" n="2">
+                    <figure>
+                        <graphic url="128R.jpg" />
+                    </figure>
+
+                    <div type="message">
+                        <dateline facs="#luogo2">
+                            <placeName ref="#MO">Modena</placeName>
+                        </dateline>
+                        <dateline facs="#data2">
+                            <date when="1917-08-08"> li 9/8-17</date>
+                        </dateline>
+                        <p facs="#messaggio2">
+                            <lb/> Ricordi......
+                        </p>
+                        <signed facs="#firma2">
+                            <persName ref="#G"><forename>Giovannino</forename></persName>
+                        </signed>
+                    </div>
+
+                    <div type="details">
+                        <p><add hand="#TC"><idno facs="#codice2">128</idno></add></p>
+                    </div>
+
+                    <div type="destination">
+                        <p>
+                            <!-- stamps -->
+                            <stamp type="postmark">
+                                <mentioned facs="#timbro2" rend="circle">
+                                    <gap reason="illegible" extent="1" unit="word"/>
+                                    <unclear reason="sbiadito">FERROVIA</unclear>
+                                </mentioned>
+                            </stamp>  
+                            <stamp type="postage" facs="#francobollo2">POSTE ITALIANE <gap reason="illegible" extent="1" unit="word"/></stamp>
+
+                            <stamp type="a" xml:id='primo' facs="#p_editore2">
+                                <stamp type="tipografia1" >
+                                    <mentioned>TUCK'S POST CARD</mentioned>
+                                </stamp>
+                                <stamp>
+                                    <note type="sub">CARTE POSTALE.</note>
+                                </stamp>
+                                <stamp xml:lang="en">
+                                    Grannie's Greates<del rend="overwritten" hand="#G">t</del> <del rend="overwritten" hand="#G">Co</del>mfo<del rend="overwritten" hand="#G">rt</del>
+                                    To the o<gap reason="illegible" extent="2" unit="chars"/> S<gap reason="illegible" extent="1" unit="chars"/>ott<del rend="overwritten" hand="#G">i</del>sh peasant, nothing is <gap reason="illegible" extent="2" unit="chars"/> comforting as the cup that cheers but not ineb<gap reason="illegible" extent="1" unit="chars"/>iates." The "Tea Cad<del rend="overwritten" hand="#G">d</del>y" is an established ine<gap reason="illegible" extent="2" unit="chars"/>t<gap reason="illegible" extent="2" unit="chars"/>n in ever<del rend="overwritten" hand="#G">y</del> cottage <gap reason="illegible" extent="1" unit="chars"/><del rend="overwritten" hand="#G">e</del>me.
+                                </stamp>
+                            </stamp>
+
+                            <stamp type="b" xml:id='secondo' facs="#s_editore2">
+                                <stamp xml:lang="en">
+                                    "SCOTTISH LIFE AND CHARATER." Series IV.
+                                    <lb/>Raphael Tuck &#38; Sons' "OILETTE" Postcard N0. 9479
+                                    <lb/>ART PUBLISHERS TO THEIR MAJESTIE THE KING &#38; QUEEN.
+                                    <lb/>After the original painting by H.J. DOBSON, A.R.C.A., R.S.W.
+                                </stamp>
+                                <stamp xml:lang="en">Copiright in London</stamp>
+                                <note type="stamp">
+                                    Stemma
+                                    <lb/>By Appointment.
+                                </note>
+                            </stamp>
+                        </p>
+
+                        <p>
+                            <address facs="#intestatario2">
+                                <addrLine>
+                                    <choice>
+                                        <abbr>Gent</abbr>
+                                        <expan>Gentile</expan>
+                                    </choice>
+                                    <choice>
+                                        <abbr>Sig na</abbr>
+                                        <expan>Signorina</expan>
+                                    </choice>
+                                </addrLine>
+
+                                <addrLine>
+                                    <persName ref="#OT"> 
+                                        <forename>Oliva</forename>
+                                        <surname>Turtura</surname>
+                                    </persName>
+                                </addrLine>
+
+                                <addrLine>Via 
+                                    <persName>
+                                        <forename>Rirolamo</forename>
+                                        <surname>Ro<unclear>r</unclear>fi</surname> 
+                                    </persName>
+                                    <num> 58 </num>
+                                </addrLine>
+
+                                <addrLine> 
+                                    <placeName ref="#RV2">Ravenna</placeName>
+                                </addrLine>
+                            </address>
+                        </p>
+                    </div>
+                </div>
+            </body>    
+        </text>
+    </TEI>  
+    
+    <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="c144">        
+        <teiHeader>
+            <fileDesc>
+                <titleStmt>
+                    <title>Febbraio</title>       
+                </titleStmt>
+
+                <editionStmt>
+                    <edition> Progetto "Codifica di testi"
+                        <date> 2023 </date>
+                    </edition>
+                </editionStmt>
+            
+                <publicationStmt> 
+                    <publisher>Università di Pisa</publisher>    
+                </publicationStmt>
+
+                <notesStmt>
+                    <note> Sul fronte riporta stampati il nome dell'artista <name ref="#M"> Mauzano </name> e la dicitura "Febbraio" </note>
+                    <note> Sul retro troviamo la stampa "Proprietà artistica riservata - Uff. Rev. Stampa Milano 27-3-17 N 94" </note>
+                </notesStmt>
+            
+                <sourceDesc>
+                    <bibl>
+                        <title> Una donna nel proprio letto stringe a sé una pelliccia bianca, imitata da un angioletto </title>
+                        <publisher>Raphael Tuck &#38; Sons</publisher>
+                        <pubPlace>England</pubPlace>
+                    </bibl>
+                    <msDesc>
+                       
+                    <msIdentifier>
+                        <country type="nation">Italia</country>
+                        <settlement type="city">La Spezia (SP)</settlement>
+                        <repository>Museo Civico Etnografico "Giovanni Podenzana", Sezione dei cimeli garibaldini e della Prima Guerrra Mondiale</repository>
+                        <idno>7694_144_001/7694_144_002</idno>
+                    </msIdentifier>
+                    
+                    
+                    <msContents>
+                        <summary>Cartolina Artistica</summary>
+                        <textLang>Italiano</textLang>
+                    </msContents>
+                    
+                    <physDesc>
+                            <objectDesc>
+                                <supportDesc>
+                                    <support>
+                                        <objectType>Cartolina</objectType>
+                                        <material>Carta</material>
+                                        <dimensions unit="cm">
+                                            <height>9</height>
+                                            <width>14</width>
+                                        </dimensions>
+                                    </support>
+                                    <condition>Buono</condition>
+                                </supportDesc>
+                            </objectDesc>
+                        </physDesc>
+                    </msDesc>
+                </sourceDesc>
+            </fileDesc>
+        
+            <profileDesc>
+                <correspDesc>
+                    <correspAction type="sent">
+                        <persName ref="#G">Giovanni</persName>
+                        <placeName ref="#MO">Modena</placeName>
+                    </correspAction>
+                    <correspAction type="received">
+                        <persName ref="#OT"> Olivia Turtura </persName>
+                        <placeName ref="#RV"> Ravenna </placeName>
+                    </correspAction>
+                </correspDesc>
+                <handNotes>
+                    <handNote xml:id="catalogatore3" medium="pen" script="handwritten">Catalogatore</handNote>
+                </handNotes>
+            </profileDesc>
+        </teiHeader>
+
+        <facsimile>
+            <surface ulx="1" uly="2" lrx="399" lry="254" n="144">
+                <graphic url="144R.jpg"/>
+                <zone xml:id="timbro3" ulx="211" uly="41" lrx="368" lry="114" />
+                <zone xml:id="francobollo3" ulx="319" uly="7" lrx="371" lry="72" />
+                <zone xml:id="codice3" ulx="234" uly="14" lrx="265" lry="36" />
+                <zone xml:id="serie3" ulx="163" uly="229" lrx="189" lry="244" />
+                <zone xml:id="intestatario3" ulx="184" uly="86" lrx="388" lry="250" />
+                <zone xml:id="luogo3" ulx="141" uly="25" lrx="179" lry="119" />
+                <zone xml:id="data3" ulx="137" uly="118" lrx="180" lry="223" />
+                <zone xml:id="messaggio3" ulx="81" uly="15" lrx="131" lry="204" />
+                <zone xml:id="firma3" ulx="24" uly="14" lrx="100" lry="231" />
+                <zone xml:id="prop_ris3" ulx="3" uly="14" lrx="17" lry="242" />
+            </surface>
+        </facsimile>
+
+   
+        <!-- DEFINIZIONE -->
+        <text type="cartolina" xml:id="terza">
+            <!-- TRASCRIZIONE -->
+            <body>
+                <div type="fronte">
+                    <figure>
+                        <graphic url="144F.jpg" />
+                        <figDesc>Una donna nel proprio letto stringe a sé una pelliccia bianca, imitata da un angioletto
+                            
+                        </figDesc>
+                    </figure>
+                </div>
+
+                <div type="retro" n="3">
+                    <figure>
+                        <graphic url="144R.jpg" />
+                    </figure>
+
+                    <div type="message">
+                        <p>
+                            <stamp facs="#prop-ris144" style =" writing-mode: vertical-lr; text-orientation: mixed">
+                                Proprietà artistica - 
+                                <choice>
+                                    <abbr> Uff. </abbr>
+                                    <expan> Ufficio </expan>
+                                </choice>
+                                <choice>
+                                    <abbr> Rev. </abbr>
+                                    <expan> Revisioni </expan>
+                                </choice>
+                                <placeName> Milano </placeName>
+                                <date when="1917-03-27">27-3-1917</date>
+                                N!
+                                <num> 94 </num>
+                            </stamp>
+
+                            <placeName facs="#luogo3" ref="#MO">Modena</placeName>
+                            <!--    <placeName ref="#MO">Modena</placeName> 
+                            </dateline> -->
+
+                            <date facs="#data3" when="1917-09-06">li 9/6-1917</date>>
+                                <!-- <date when="1917-09-06">li 9/6-1917</date>
+                            </dateline> -->
+
+                            
+                            <s facs="#messaggio3">
+                                <lb/> Frequenti pensieri
+                            </s>
+                            
+
+                            <signatures facs="#firma3">
+                                <persName ref="#G">Giovannino</persName>
+                            </signatures>
+                        </p>
+                    </div>
+                    
+
+                    <div type="details">
+                        <p><add hand="#TC"><idno facs="#codice2">144</idno></add></p>
+                    </div>
+
+                    <div type="destination">
+                        <p>
+                            <stamp type="postmark"> 
+                                <mentioned facs="#timbro3" rend="circle">
+                                    <placeName> <unclear reason="sbiadito"> MODENA </unclear> </placeName>
+                                    <date> 09/06/17 </date>
+                                    <unclear reason="sbiadito">FERROVIA</unclear>
+                                </mentioned>
+                                
+                                <date when="1917-05-25" facs="#timbro3"> 25.5.17 </date>
+                            </stamp>
+
+                            <stamp type="postage" facs="#francobollo3">Francobollo da 5 centesimi di Poste Italiane</stamp>
+                            <stamp type="tipografia2" facs="#serie3">
+                                <mentioned>13-2</mentioned>
+                            </stamp>
+                        </p>
+
+                        <p>
+                            <address facs="#intestatario3">
+                                <addrLine>
+                                    <choice>
+                                        <abbr> Gent. </abbr> 
+                                         <expan> Gentile </expan> 
+                                    </choice>
+                                    <choice>
+                                        <abbr> Sig. </abbr> 
+                                        <expan> Signora </expan>
+                                    </choice>
+                                    <persName ref="#OT">
+                                        <forename>Oliva</forename>
+                                        <surname>Turtura</surname>
+                                    </persName>
+                                </addrLine>
+
+                                <addrLine>Via 
+                                    <persName>
+                                        <forename>Girolamo</forename>
+                                        <surname>Ronfi</surname>
+                                    </persName>
+                                    <num>58</num>
+                                </addrLine>
+                                
+                                <addrLine>
+                                    <hi rend="underline">
+                                        <placeName ref="#R"> Ravenna </placeName> 
+                                    </hi>
+                                </addrLine>
+                            </address>
+                        </p>
+                    </div>
+                </div>
+            </body>
+        </text>
+    </TEI>  
+
+</teiCorpus>
